@@ -65,4 +65,3 @@ def format_date(date):
     yymmdd = list(map(lambda x: int(x), str(date).split(" ")[0].split("-")))
     return datetime.date(yymmdd[0], yymmdd[1], yymmdd[2])
 
-df = pd.read_excel("./Data/hist.xlsx").set_index("date")
